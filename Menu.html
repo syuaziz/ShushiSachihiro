@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shushi Sachihiro</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/slider.css" />
+<style type="text/css">
+    body{
+    background-image:  url("images/background.jpg");
+    background-color:black;  
+    background-size:cover;                      
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    
+}
+.auto-style1 {
+	text-align: center;
+}
+.auto-style2 {
+	text-align: center;
+	font-family: Tahoma;
+	font-size: xx-large;
+	color: #FF4500;
+}
+</style>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'images/button2F.gif',/*url*/'images/button30.gif')">
+    
+<div class="trademark">
+    <a href="index.html"><img src="images/logo.png"></a>
+    <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+        <button type="submit" value="submit"><i>Go</i></button>
+    </form>
+  </div>
+    
+    </div>
+
+<nav class="navigation-bar">
+  <li><a href="index.html">Home</a></li>
+	<li><a href="Menu.html">Menu</a></li>
+  <li><a href="Promotion.html">Promotion</a></li>
+  <li><a href="About.html">About Us</a></li>
+  <li><a href="Contact.html">Contact Us</a></li>
+</nav>    
+
+    
+    <ul id=welcome>
+        
+        <div class=loginbanner>
+            <li class="loginbox"><h3>Hungry? Login Now</h3>
+            <a class="auto-style10" href="LoginCode.html">
+			<img id="img1" alt="Login" fp-style="fp-btn: Glass Capsule 5; fp-font-style: Bold; fp-font-size: 11; fp-transparent: 1" fp-title="Login" height="30" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'images/button30.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'images/button2E.gif')" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'images/button2F.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'images/button2F.gif')" src="images/button2E.gif" style="border: 0" width="150" class="auto-style9"></a>
+            </li>
+            <div class="welcometext"><h1>Welcome to Shushi Sachihiro</h1></div>
+        </div>
+    </ul>
+    <ul>
+        <li>
+		<h2 class="auto-style2">&nbsp;</h2>
+		</li>
+        <div id="content">
+            <p class="auto-style1">&nbsp;</p>
+			<p class="auto-style1">&nbsp;</p>
+			<p class="auto-style1">&nbsp;</p>
+			<p class="auto-style1">&nbsp;</p>
+			<p class="auto-style1">
+			<img alt="" height="701" src="images/img1E.jpg" width="582"></p>
+			<p class="auto-style1">&nbsp;</p>
+			<p class="auto-style1">&nbsp;</p>
+			<p class="auto-style1">&nbsp;</p>
+			<p class="auto-style1">&nbsp;</p>
+            </ul>
+    
+    <div id="footer">
+        <div><h1>Stay Connected</h1><br></div>
+        <div><img class="fb" src="images/fb.png">
+             <img class="insta" src="images/insta.png">
+        </div>
+        <div><img class="qrcode" src="images/qrcode.png">
+        </div>
+        <div><p style="padding-top: 15px">Let your friend scan this QR Code to load this mobile web on his/her mobile device.</p></div>
+        <div><p style="padding-top: 15px">SHUSHI SACHIHIRO JAPANESE RESTAURANT  ©  All Rights Reserved.</p></div>
+    
+    </div>
+    
+    
+    <script>
+$(windows).resize(function(){
+        if ($(window).width() < $('.content').width()){
+            $('.container').css('position', 'static');
+        }
+        else{
+            $('.container').css('position', 'fixed');
+        }
+    });
+</script>
+    </body>
+</html> 
